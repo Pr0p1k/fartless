@@ -1,3 +1,4 @@
+; Added my SPL first lab for convenience
 global string_length
 global print_newline
 global print_char
@@ -9,6 +10,7 @@ global parse_uint
 global string_equals
 global read_char
 global read_word
+global print_tab
 global string_copy
 global in_fd
 
@@ -142,8 +144,6 @@ read_char:
     pop rax
     ret 
 
-section .text
-
 read_word:
     push r14
     xor r14, r14 
@@ -192,6 +192,10 @@ read_word:
     mov rdx, r14 
     pop r14
     ret
+    
+print_tab:
+	mov rdi, 9
+	jmp print_char
    
 string_copy:
     mov dl, byte[rdi]

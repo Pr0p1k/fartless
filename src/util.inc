@@ -7,6 +7,7 @@ extern print_char
 extern print_string
 extern print_uint
 extern print_int
+extern print_tab
 extern parse_int
 extern parse_uint
 extern string_equals

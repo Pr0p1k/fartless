@@ -1,2 +1,1 @@
-# here we simply load stdlib into the interpreter
-cat stdlib.frt - | ./bin/forthress
+./bin/forthress

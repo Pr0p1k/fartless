@@ -2,8 +2,8 @@
 %macro native 3
     section .data
     wh_ %+ %2 : dq _lw
-    db 0  ; to mark the name start
-    db %1, 0
+    db 0                                ; to mark the name start
+    db %1, 0   
     db %3
     
     %define _lw wh_%+ %2 
@@ -20,7 +20,7 @@ native %1, %2, 0
 section .data 
     wh_ %+ %2 : dq _lw
     %define _lw wh_ %+ %2 
-    db 0  ; to mark the name start
+    db 0                               ; to mark the name start
     str_ %+ %2:
     db %1, 0
     db %3
