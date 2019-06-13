@@ -15,6 +15,7 @@ state:  dq user_dict
 const "forth-last-word", last_word
 const "forth-here", here
 const "forth-is-compiling", state
+const "forth-inbuf", input_buffer
 
 
 colon "bye", bye

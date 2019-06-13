@@ -30,7 +30,7 @@ rstack_start: resq 1   ;
 ; return stack start---;
 
 user_mem: resq 65536   ; global data for user
-
+input_buffer: resb 1024 
 section .data
 
 last_word: dq _lw      ; stores a pointer to the last word in dictionary
